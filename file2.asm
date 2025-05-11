@@ -4,7 +4,7 @@
 .data
 .code 
 
-mian proc
+main proc
 
 mov dl, 'Z'
 mov ah, 2
