@@ -1,5 +1,6 @@
 ; Program to add two numbers
 
+dosseg
 .model small 
 .stack 100h
 .data
