@@ -5,7 +5,6 @@
 .data
 .code
 main proc
-
 mov bl, 2
 add bl, 1
 mov dl, bl
