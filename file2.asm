@@ -1,4 +1,6 @@
- dosseg
+; Program to print a name with characters
+ 
+dosseg
 .model small 
 .stack 100h
 .data
