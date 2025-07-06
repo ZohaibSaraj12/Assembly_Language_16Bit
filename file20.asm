@@ -22,8 +22,9 @@ int 21h
 mov bl, 2
 div bl
 
+add ah, 48
 
-cmp ah, 0
+cmp ah, 48
 je l1
 
 mov dx, offset msg1
