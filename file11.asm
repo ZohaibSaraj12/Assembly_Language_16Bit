@@ -4,7 +4,7 @@ dosseg
 .stack 100h
 .data
  msg1 db 'hello$'
- msg2 db 'world$'
+ msg2 db 13, 10, 'world$'
 .code
 
 main proc
@@ -16,13 +16,6 @@ mov dx, offset msg1 ; lazmi offset yaad rakhna
 mov ah, 9
 int 21h
 
-mov dl, 10
-mov ah, 2
-int 21h
-
-mov dl, 13
-mov ah, 2
-int 21h
 
 
 mov dx, offset msg2  ;we use offset for starting address of the given string to print the whole string, offset return 16 bit address to store we use dx data register

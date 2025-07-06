@@ -14,10 +14,10 @@ nameOfPerson db 'zohaib$'
 main proc
 
 mov ax, @data
-mov ds, ax     ; initialize data segment register
+mov ds, ax
+
 
 mov dl, n
-
 mov ah, 2
 int 21h
 
@@ -26,15 +26,13 @@ mov dl, no
 mov ah, 2
 int 21h
 
-mov dx, offset nameOfPerson  ; can also write as lea dx, name
-; dx is liye kion k offset 16 bit address return karta haye 
 
+lea dx, nameOfPerson
 mov ah, 9
 int 21h
 
 mov ah, 4ch
 int 21h
-
 
 
 main endp
